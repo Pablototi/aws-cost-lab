@@ -1,0 +1,12 @@
+# Credenciales y configuracion local
+*.env
+.aws/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos temporales
+*.tmp
+*.log

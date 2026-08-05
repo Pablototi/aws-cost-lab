@@ -1,0 +1,40 @@
+{
+  "snapshot_date": "2026-08-05",
+  "generated_at": "2026-08-05T22:38:18Z",
+  "period": {
+    "start": "2026-07-01",
+    "end": "2026-08-04"
+  },
+  "total_cost": 17.24,
+  "currency": "USD",
+  "monthly_summary": [
+    {
+      "month": "2026-07",
+      "total_cost": 17.24
+    }
+  ],
+  "services_summary": [
+    {
+      "service": "Amazon Registrar",
+      "total_cost": 15.0
+    },
+    {
+      "service": "Tax",
+      "total_cost": 2.24
+    }
+  ],
+  "daily_detail": [
+    {
+      "date": "2026-07-02",
+      "service": "Amazon Registrar",
+      "cost": 15.0,
+      "currency": "USD"
+    },
+    {
+      "date": "2026-07-02",
+      "service": "Tax",
+      "cost": 2.24,
+      "currency": "USD"
+    }
+  ]
+}
