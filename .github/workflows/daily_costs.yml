@@ -2,8 +2,11 @@ name: AWS Daily Cost Report
 
 on:
   schedule:
-    - cron: '0 14 * * *'  # Todos los dias a las 9am hora de Miami (UTC-5)
-  workflow_dispatch:        # Permite correrlo manualmente desde GitHub
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   get-costs:
