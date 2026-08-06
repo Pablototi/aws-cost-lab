@@ -1,0 +1,443 @@
+{
+  "schema_version": "1.0",
+  "month": "2026-07",
+  "generated_at": "2026-08-06T20:15:13Z",
+  "total_cost": 17.24,
+  "currency": "USD",
+  "daily_detail": [
+    {
+      "date": "2026-07-01",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-01",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-02",
+      "service": "Amazon Registrar",
+      "cost": 15.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-02",
+      "service": "Tax",
+      "cost": 2.24,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-03",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-03",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-05",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-05",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-06",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-06",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-07",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-07",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-08",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-08",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-09",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-09",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-10",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-10",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-11",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-11",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-12",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-12",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-13",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-13",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-14",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-14",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-15",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-15",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-16",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-16",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-17",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-17",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-18",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-18",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-19",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-19",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-20",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-20",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-21",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-21",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-22",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-22",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-23",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-23",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-24",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-24",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-25",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-25",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-26",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-26",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-27",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-27",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-28",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-28",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-29",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-29",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-30",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-30",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-31",
+      "service": "Amazon Registrar",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-07-31",
+      "service": "Tax",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    }
+  ]
+}

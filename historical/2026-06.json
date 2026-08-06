@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0",
+  "month": "2026-06",
+  "generated_at": "2026-08-06T20:15:13Z",
+  "total_cost": 0.0,
+  "currency": "USD",
+  "daily_detail": [
+    {
+      "date": "2026-06-01",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-02",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-03",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-04",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-05",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-06",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-07",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-08",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-09",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-10",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-11",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-12",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-13",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-14",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-15",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-16",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-17",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-18",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-19",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-20",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-21",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-22",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-23",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-24",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-25",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-26",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-27",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-28",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-29",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-06-30",
+      "service": "No cost",
+      "cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    }
+  ]
+}
