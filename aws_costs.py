@@ -7,7 +7,8 @@ from dateutil.relativedelta import relativedelta
 # ============================================================
 # CONFIGURACION
 # ============================================================
-BASE_PATH = 'C:\\Users\\pablo\\aws-cost-lab'
+import os
+BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 SNAPSHOTS_PATH = os.path.join(BASE_PATH, 'daily-snapshots')
 HISTORICAL_PATH = os.path.join(BASE_PATH, 'historical')
 S3_BUCKET = 'tu-bucket-name'
