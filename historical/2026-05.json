@@ -1,441 +1,567 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "month": "2026-05",
-  "generated_at": "2026-08-06T20:15:12Z",
-  "total_cost": 19.55,
+  "generated_at": "2026-08-07T23:00:59Z",
+  "total_gross_cost": 19.55,
+  "total_credits": 0.0,
+  "total_net_cost": 19.55,
   "currency": "USD",
   "daily_detail": [
     {
       "date": "2026-05-01",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-01",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-02",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-02",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-03",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-03",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-04",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-04",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-05",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-05",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-06",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-06",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-07",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-07",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-08",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-08",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-09",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-09",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-10",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-10",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-11",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-11",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-12",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-12",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-13",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-13",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-14",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-14",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-15",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-15",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-16",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-16",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-17",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-17",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-18",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-18",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-19",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-19",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-20",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-20",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-21",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-21",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-22",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-22",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-23",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-23",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-24",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-24",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-25",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-25",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-26",
       "service": "Amazon Registrar",
-      "cost": 17.0,
+      "gross_cost": 17.0,
+      "credits": 0.0,
+      "net_cost": 17.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-26",
       "service": "Tax",
-      "cost": 2.55,
+      "gross_cost": 2.55,
+      "credits": 0.0,
+      "net_cost": 2.55,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-27",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-27",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-28",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-28",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-29",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-29",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-30",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-30",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-31",
       "service": "Amazon Registrar",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     },
     {
       "date": "2026-05-31",
       "service": "Tax",
-      "cost": 0.0,
+      "gross_cost": 0.0,
+      "credits": 0.0,
+      "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
     }
