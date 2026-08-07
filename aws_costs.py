@@ -7,7 +7,6 @@ from dateutil.relativedelta import relativedelta
 # ============================================================
 # CONFIGURACION
 # ============================================================
-import os
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 SNAPSHOTS_PATH = os.path.join(BASE_PATH, 'daily-snapshots')
 HISTORICAL_PATH = os.path.join(BASE_PATH, 'historical')
@@ -16,18 +15,6 @@ S3_PREFIX = 'aws-cost-history'
 
 os.makedirs(SNAPSHOTS_PATH, exist_ok=True)
 os.makedirs(HISTORICAL_PATH, exist_ok=True)
-
-# ============================================================
-# CONFIGURACION DE DIMENSIONES
-# Aqui defines que campos quieres traer de AWS
-# Para agregar mas en el futuro solo agrega al lista
-# ============================================================
-GROUP_BY_DIMENSIONS = [
-    {'Type': 'DIMENSION', 'Key': 'SERVICE'},
-    # {'Type': 'DIMENSION', 'Key': 'REGION'},           # Descomentar cuando se necesite
-    # {'Type': 'DIMENSION', 'Key': 'LINKED_ACCOUNT'},   # Descomentar cuando se necesite
-    # {'Type': 'TAG', 'Key': 'Environment'},             # Descomentar cuando se necesite
-]
 
 # ============================================================
 # FECHAS
@@ -57,17 +44,19 @@ def generate_all_days(start_date_str, end_date_str):
 
 # ============================================================
 # FUNCION PARA CONSULTAR AWS
+# Trae Usage (costo bruto) y Credit (creditos) por separado
 # ============================================================
 def get_costs(start_date, end_date):
     client = boto3.client('ce', region_name='us-east-1')
+
     response = client.get_cost_and_usage(
-        TimePeriod={
-            'Start': start_date,
-            'End': end_date
-        },
+        TimePeriod={'Start': start_date, 'End': end_date},
         Granularity='DAILY',
         Metrics=['UnblendedCost'],
-        GroupBy=GROUP_BY_DIMENSIONS
+        GroupBy=[
+            {'Type': 'DIMENSION', 'Key': 'RECORD_TYPE'},
+            {'Type': 'DIMENSION', 'Key': 'SERVICE'}
+        ]
     )
 
     costs_by_day = {}
@@ -75,28 +64,30 @@ def get_costs(start_date, end_date):
 
     for day in response['ResultsByTime']:
         date = day['TimePeriod']['Start']
-        costs_by_day[date] = {}
+        if date not in costs_by_day:
+            costs_by_day[date] = {}
+
         for group in day['Groups']:
-            # El primer key es siempre el servicio
-            service = group['Keys'][0]
+            record_type = group['Keys'][0]  # Usage, Credit, Tax, etc.
+            service = group['Keys'][1]
             cost = float(group['Metrics']['UnblendedCost']['Amount'])
 
-            # Construir attributes dinamicamente con los demas keys
-            attributes = {}
-            keys = group['Keys']
-            for i, dim in enumerate(GROUP_BY_DIMENSIONS):
-                if i < len(keys):
-                    field_name = dim['Key'].lower()
-                    if i > 0:  # El primero es SERVICE, va en su propio campo
-                        attributes[field_name] = keys[i]
+            if service not in costs_by_day[date]:
+                costs_by_day[date][service] = {
+                    'gross_cost': 0.0,
+                    'credits': 0.0,
+                    'attributes': {}
+                }
 
-            costs_by_day[date][service] = {
-                'cost': round(cost, 6),
-                'attributes': attributes
-            }
+            if record_type == 'Usage':
+                costs_by_day[date][service]['gross_cost'] += round(cost, 6)
+                if abs(cost) > 0.0001:
+                    all_services.add(service)
 
-            if cost > 0.0001:
-                all_services.add(service)
+            elif record_type == 'Credit':
+                costs_by_day[date][service]['credits'] += round(cost, 6)
+                if abs(cost) > 0.0001:
+                    all_services.add(service)
 
     return costs_by_day, all_services
 
@@ -114,35 +105,52 @@ def build_daily_detail(costs_by_day, all_services, start_date, end_date_display)
             daily_detail.append({
                 "date": day_date,
                 "service": "No cost",
-                "cost": 0.0,
+                "gross_cost": 0.0,
+                "credits": 0.0,
+                "net_cost": 0.0,
                 "currency": "USD",
                 "attributes": {}
             })
         else:
             for service in sorted(all_services):
-                service_data = day_costs.get(service, {'cost': 0.0, 'attributes': {}})
+                data = day_costs.get(service, {
+                    'gross_cost': 0.0,
+                    'credits': 0.0,
+                    'attributes': {}
+                })
+                gross = data['gross_cost']
+                credits = data['credits']
+                net = round(gross + credits, 6)
+
                 daily_detail.append({
                     "date": day_date,
                     "service": service,
-                    "cost": service_data['cost'],
+                    "gross_cost": gross,
+                    "credits": credits,
+                    "net_cost": net,
                     "currency": "USD",
-                    "attributes": service_data['attributes']
+                    "attributes": data['attributes']
                 })
 
     return daily_detail
 
 # ============================================================
-# FUNCION PARA ARMAR EL JSON v1.0
+# FUNCION PARA ARMAR EL JSON v1.1
 # ============================================================
 def build_output(costs_by_day, all_services, start_date, end_date_display, month_str):
     daily_detail = build_daily_detail(costs_by_day, all_services, start_date, end_date_display)
-    total = round(sum(r['cost'] for r in daily_detail), 6)
+
+    total_gross = round(sum(r['gross_cost'] for r in daily_detail), 6)
+    total_credits = round(sum(r['credits'] for r in daily_detail), 6)
+    total_net = round(sum(r['net_cost'] for r in daily_detail), 6)
 
     return {
-        "schema_version": "1.0",
+        "schema_version": "1.1",
         "month": month_str,
         "generated_at": datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'),
-        "total_cost": total,
+        "total_gross_cost": total_gross,
+        "total_credits": total_credits,
+        "total_net_cost": total_net,
         "currency": "USD",
         "daily_detail": daily_detail
     }
@@ -168,7 +176,8 @@ if today.day <= 5:
     costs_last, services_last = get_costs(start_last, end_last)
     output_last = build_output(costs_last, services_last, start_last, last_day_last_month, last_month_str)
     save_json(output_last, os.path.join(BASE_PATH, 'previous_month.json'))
-    print(f"💾 previous_month.json ({last_month_str}) — ${output_last['total_cost']} USD")
+    print(f"💾 previous_month.json ({last_month_str})")
+    print(f"   Bruto: ${output_last['total_gross_cost']} | Creditos: ${output_last['total_credits']} | Neto: ${output_last['total_net_cost']}")
 
     # Mes actual hasta ayer
     start_current = first_day_current_month.strftime('%Y-%m-%d')
@@ -176,7 +185,8 @@ if today.day <= 5:
     costs_current, services_current = get_costs(start_current, end_current)
     output_current = build_output(costs_current, services_current, start_current, yesterday.strftime('%Y-%m-%d'), current_month_str)
     save_json(output_current, os.path.join(BASE_PATH, 'current_month.json'))
-    print(f"💾 current_month.json ({current_month_str}) — ${output_current['total_cost']} USD")
+    print(f"💾 current_month.json ({current_month_str})")
+    print(f"   Bruto: ${output_current['total_gross_cost']} | Creditos: ${output_current['total_credits']} | Neto: ${output_current['total_net_cost']}")
 
     snapshot_data = output_last
 
@@ -188,13 +198,12 @@ else:
     costs_current, services_current = get_costs(start_current, end_current)
     output_current = build_output(costs_current, services_current, start_current, yesterday.strftime('%Y-%m-%d'), current_month_str)
     save_json(output_current, os.path.join(BASE_PATH, 'current_month.json'))
-    print(f"💾 current_month.json ({current_month_str}) — ${output_current['total_cost']} USD")
+    print(f"💾 current_month.json ({current_month_str})")
+    print(f"   Bruto: ${output_current['total_gross_cost']} | Creditos: ${output_current['total_credits']} | Neto: ${output_current['total_net_cost']}")
 
-    # El dia 6 mover mes anterior a historical/ y luego a S3
+    # Dia 6: guardar mes anterior en historical/
     if today.day == 6:
         print(f"\n📦 Cerrando mes {last_month_str}...")
-
-        # Guardar mes anterior en historical/
         start_last = first_day_last_month.strftime('%Y-%m-%d')
         end_last = first_day_current_month.strftime('%Y-%m-%d')
         last_day_last_month = (first_day_current_month - timedelta(days=1)).strftime('%Y-%m-%d')
@@ -204,7 +213,6 @@ else:
         save_json(output_last, historical_file)
         print(f"💾 historical/{last_month_str}.json guardado")
 
-        # Eliminar previous_month.json
         previous_path = os.path.join(BASE_PATH, 'previous_month.json')
         if os.path.exists(previous_path):
             os.remove(previous_path)
@@ -223,10 +231,8 @@ print(f"📸 Snapshot: {snapshot_filename}")
 # ============================================================
 # RESUMEN FINAL
 # ============================================================
-print(f"\n{'='*50}")
+print(f"\n{'='*60}")
 if today.day <= 5:
-    print(f"💰 {last_month_str}: ${output_last['total_cost']} USD")
-    print(f"💰 {current_month_str}: ${output_current['total_cost']} USD")
-else:
-    print(f"💰 {current_month_str}: ${output_current['total_cost']} USD")
-print(f"{'='*50}")
+    print(f"💰 {last_month_str} — Bruto: ${output_last['total_gross_cost']} | Creditos: ${output_last['total_credits']} | Neto: ${output_last['total_net_cost']}")
+print(f"💰 {current_month_str} — Bruto: ${output_current['total_gross_cost']} | Creditos: ${output_current['total_credits']} | Neto: ${output_current['total_net_cost']}")
+print(f"{'='*60}")
