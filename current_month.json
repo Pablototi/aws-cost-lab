@@ -1,17 +1,62 @@
 {
   "schema_version": "1.1",
   "month": "2026-10",
-  "generated_at": "2026-10-02T18:45:51Z",
-  "total_gross_cost": 0.0,
-  "total_credits": 0.0,
+  "generated_at": "2026-10-03T17:40:13Z",
+  "total_gross_cost": 1.072055,
+  "total_credits": -1.072055,
   "total_net_cost": 0.0,
   "currency": "USD",
   "daily_detail": [
     {
       "date": "2026-10-01",
-      "service": "No cost",
-      "gross_cost": 0.0,
-      "credits": 0.0,
+      "service": "AWS Cost Explorer",
+      "gross_cost": 0.01,
+      "credits": -0.01,
+      "net_cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-10-01",
+      "service": "Amazon Route 53",
+      "gross_cost": 1.000474,
+      "credits": -1.000474,
+      "net_cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-10-01",
+      "service": "Amazon Simple Storage Service",
+      "gross_cost": 0.000686,
+      "credits": -0.000686,
+      "net_cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-10-02",
+      "service": "AWS Cost Explorer",
+      "gross_cost": 0.06,
+      "credits": -0.06,
+      "net_cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-10-02",
+      "service": "Amazon Route 53",
+      "gross_cost": 0.000484,
+      "credits": -0.000484,
+      "net_cost": 0.0,
+      "currency": "USD",
+      "attributes": {}
+    },
+    {
+      "date": "2026-10-02",
+      "service": "Amazon Simple Storage Service",
+      "gross_cost": 0.000411,
+      "credits": -0.000411,
       "net_cost": 0.0,
       "currency": "USD",
       "attributes": {}
